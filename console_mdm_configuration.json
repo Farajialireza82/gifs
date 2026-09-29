@@ -43,14 +43,14 @@
     },
     "hardware": {
       "bluetooth_active": true,
-      "bluetooth_restricted": true,
+      "bluetooth_restricted": false,
       "bluetooth_configuration_restricted": false,
-      "camera_restricted": false,
+      "camera_restricted": true,
       "otg_restricted": false,
       "sd_card_restricted": false,
       "use_transfer_restricted": false,
       "gps_restricted": false,
-      "location_service_active": false
+      "location_service_active": true
     },
     "system_settings": {
       "data_time_restricted": true,
