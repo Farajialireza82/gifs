@@ -40,18 +40,18 @@
     },
     "hardware": {
       "bluetooth_active": true,
-      "bluetooth_restricted": false,
-      "bluetooth_configuration_restricted": false,
+      "bluetooth_restricted": true,
+      "bluetooth_configuration_restricted": true,
       "camera_restricted": true,
-      "otg_sdcard_restricted": false,
-      "usb_transfer_restricted": false,
-      "gps_restricted": false,
-      "location_service_active": false
+      "otg_sdcard_restricted": true,
+      "usb_transfer_restricted": true,
+      "gps_restricted": true,
+      "location_service_active": true
     },
     "system_settings": {
-      "date_time_restricted": false,
-      "safe_boot_restricted": false,
-      "developer_option_restricted": false
+      "date_time_restricted": true,
+      "safe_boot_restricted": true,
+      "developer_option_restricted": true
     },
     "edr_settings": {
       "enabled": true,
