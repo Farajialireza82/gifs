@@ -1,18 +1,15 @@
 {
-  "agent_id": "f47ac10b-58cc-4372-a567-0e02b2c3d479",
   "timestamp": 1726700400000,
   "client_status": {
     "network": {
       "general": {
-        "hotspot_active": false,
-        "hospot_restricted": false,
+        "hotspot_restricted": false,
         "mobile_data_restricted": false,
         "mobile_network_configuration_blocked": false,
         "data_roaming_blocked": false,
         "mobile_network_reset_blocked": false,
-        "airplace_mode_restricted": false,
-        "always_on_firewall_active": false,
-        "always_on_vpn_active": false
+        "airplane_mode_restricted": false,
+        "always_on_firewall_active": false
       },
       "allowed_apns": [
         {
@@ -20,7 +17,7 @@
           "apn": "",
           "mcc": "",
           "mnc": "",
-          "apn_type": "default|mms"
+          "apn_type": "default"
         }
       ],
       "allowed_sims": [
@@ -42,33 +39,26 @@
       }
     },
     "hardware": {
-      "bluetooth_active": true,
-      "bluetooth_restricted": true,
-      "bluetooth_configuration_restricted": true,
-      "camera_restricted": true,
-      "sd_card_otg_restricted": true,
-      "use_transfer_restricted": true,
-      "gps_restricted": true,
-      "location_service_active": true
+      "bluetooth_active": false,
+      "bluetooth_restricted": false,
+      "bluetooth_configuration_restricted": false,
+      "camera_restricted": false,
+      "otg_sdcard_restricted": false,
+      "usb_transfer_restricted": false,
+      "gps_restricted": false,
+      "location_service_active": false
     },
     "system_settings": {
-      "data_time_restricted": true,
-      "safe_boot_restricted": true,
-      "developer_option_restricted": true
+      "date_time_restricted": false,
+      "safe_boot_restricted": false,
+      "developer_option_restricted": false
     },
     "edr_settings": {
       "enabled": true,
-      "server_url": "https://someurl.com",
-      "use_pms_proxy": false,
-      "enabled_for_group": false,
-      "enabled_commands_for_group": false,
-      "enabled_file_gathering_for_group": false
+      "server_url": ""
     },
     "security_management": {
-      "device_password": "",
-      "account_modification_restricted": false,
-      "instant_lock": false,
-      "remove_password": false
+      "account_modification_restricted": false
     },
     "app_permissions": [
       {
@@ -91,6 +81,7 @@
       "kiosk_mode": {
         "statusbar_visible": false,
         "navigation_bar_visible": false,
+        "disabled_btn_home_recent_app": false,
         "applications": [
           {
             "enabled": false,
@@ -101,26 +92,41 @@
     },
     "device_actions": {
       "system_update": {
-        "type": "{block|allow|schedule}",
+        "type": "block",
         "schedule": [
           {
-            "day": "sat|sun|mon|tue|wed|thu|fri",
-            "start_time": "8:00",
-            "end_time": "16:00 (24h range)"
+            "day": "sat",
+            "start_time": "08:00",
+            "end_time": "16:00"
           }
         ]
       },
       "frp_whitelist": [
         {
           "enabled": false,
+          "gmail": "",
           "gaid": ""
         }
       ]
     },
+    "device_management": {
+      "restrict_reset_factory": {
+        "enabled": false
+      },
+      "auto_upgrade_mdm": {
+        "type": "automatic",
+        "schedule": [
+          {
+            "day": "sat",
+            "start_time": "08:00",
+            "end_time": "16:00"
+          }
+        ]
+      }
+    },
     "device_owner_info": {
       "is_device_owner": true,
-      "package_name": "com.padvish.antivirus.corporate.base",
-      "reset_password_token_configured": true
+      "package_name": "com.padvish.antivirus.corporate.base"
     },
     "certificates_status": {
       "installed_ca_certificates": [
