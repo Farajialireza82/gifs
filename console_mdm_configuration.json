@@ -45,8 +45,8 @@
       "camera_restricted": false,
       "otg_sdcard_restricted": false,
       "usb_transfer_restricted": false,
-      "gps_restricted": false,
-      "location_service_active": false
+      "gps_restricted": true,
+      "location_service_active": true
     },
     "system_settings": {
       "date_time_restricted": false,
