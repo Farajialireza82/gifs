@@ -43,7 +43,7 @@
     },
     "hardware": {
       "bluetooth_active": true,
-      "bluetooth_restricted": false,
+      "bluetooth_restricted": true,
       "bluetooth_configuration_restricted": false,
       "camera_restricted": true,
       "otg_restricted": false,
