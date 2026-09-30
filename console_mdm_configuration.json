@@ -46,8 +46,7 @@
       "bluetooth_restricted": true,
       "bluetooth_configuration_restricted": true,
       "camera_restricted": false,
-      "otg_restricted": false,
-      "sd_card_restricted": false,
+      "sd_card_otg_restricted": true,
       "use_transfer_restricted": false,
       "gps_restricted": false,
       "location_service_active": true
