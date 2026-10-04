@@ -59,17 +59,17 @@
     "security_management": {
       "account_modification_restricted": false
     },
-    "app_permissions": [
-      {
-        "rule_name": "Permission app1",
-        "description": "",
-        "enabled": false,
-        "package_name": "com.example.app",
-        "permissions": [
-          "android.permission.BIND_ACCESSIBILITY_SERVICE"
-        ]
-      }
-    ],
+   "app_permissions": [
+    {
+      "rule_name": "Install Permission - CamScanner",
+      "description": "",
+      "enabled": true,
+      "package_name": "com.intsig.camscanner",
+      "permissions": [
+        "android.permission.CAMERA"
+      ]
+    }
+  ],
     "app_management": {
       "suspended_applications": [
         {
@@ -78,12 +78,12 @@
         }
       ],
       "kiosk_mode": {
-      	"enabled":false,
-        "statusbar_visible": false,
+        "enabled": true,
+        "statusbar_visible": true,
         "disabled_btn_home_recent_app": false,
         "applications": [
           {
-            "package_name": ""
+            "package_name": "com.android.chrome"
           }
         ]
       }
@@ -93,7 +93,6 @@
         "type": "{block|allow|schedule}",
         "schedule": [
           {
-            "day": "sat|sun|mon|tue|wed|thu|fri",
             "start_time": "08:00",
             "end_time": "16:00 (24h range)"
           }
