@@ -57,7 +57,7 @@
       "server_url": ""
     },
     "security_management": {
-      "account_modification_restricted": false
+      "account_modification_restricted": true
     },
    "app_permissions": [
     {
