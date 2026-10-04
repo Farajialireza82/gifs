@@ -91,12 +91,10 @@
     "device_actions": {
       "system_update": {
         "type": "schedule",
-        "schedule": [
-          {
+        "schedule": {
             "start_time": "08:00",
             "end_time": "16:00"
           }
-        ]
       },
       "frp_whitelist": [
         {
